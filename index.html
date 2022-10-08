@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books I Have Read</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        div {
+            border-style: solid;
+            border-color: rgb(44, 31, 31);
+            background-color: rgb(48, 161, 184);
+            margin: 5px;
+        }
+    </style>
+</head>
+<br>
+<body class="container">
+    <div class="card">
+    <div class="card-body">
+        <div class="row">
+        <div class="col-sm">
+    <div class="form-group">
+    <label for="new-start-date">Start Date</label>
+    <input type="date" class="form-control" id="new-start-date">
+    </div>
+        </div>    
+        <div class="col-sm">
+            <div class="form-group">
+                <label for="new-end-date">Finished Date</label>
+                <input type="date" class="form-control" id="new-end-date">
+                </div> 
+        </div>  
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="new-task">Title</label>
+                    <input type="text" class="form-control" id="new-book" placeholder="Title">                    
+                    </div> 
+
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="form-group">
+                                <label for="new-task">Author</label>
+                                <input type="text" class="form-control" id="new-author" placeholder="Author">                    
+                                </div> 
+            </div>
+            </div>
+        </div>
+        <div><button id="add" class="btn btn-primary from-control">Create</button></div>
+    </div>
+</div>
+<table id="list" class="table table-dark table-striped">
+<tr>
+    <th>Date Created</th>
+    <th>Book</th>
+    <th>Author</th>
+    <th>Start Date</th>
+    <th>Finished Date</th>
+    <th>Actions</th>
+</tr>
+</table>
+   
+
+    
+<script src="todo.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+</body>
+</html>
